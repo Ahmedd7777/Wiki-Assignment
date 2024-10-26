@@ -1,0 +1,183 @@
+/* Images styles*/
+.mp7, .mptt100, .mpss {
+    width: 300px;
+    height: 200px;
+    overflow: hidden; /* Optional: to hide overflow */
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or 'contain' depending on your needs */
+}
+
+figure {
+    margin: auto; /* Remove default margin */
+    border: 2px solid #333;
+    text-align: center; /* Center the caption under the image */
+}
+
+.images {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    
+}
+
+figcaption {
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Change text color */
+    background-color: #D97C30;
+    border-top: 2px solid #333;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fbe5a2; /* Light sandy background */
+    background-image: url('https://www.dropbox.com/scl/fi/9q7b70v2hzc9jf173263z/pokey_texture.png?rlkey=yhyc7d0g6ixyulu07yci7uvn8&st=i607afob&raw=1'); /* Add a Pokey texture image if you have one */
+    background-repeat: repeat; /* Repeat the texture */
+    background-size: contain; /* Scale background to fit */
+    background-position: center 150px;
+}
+    
+/* Header styles */
+header {
+    background: #4B7F3D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 65px;
+    border-bottom: 2px solid #3E6A31;
+    scroll-margin-top: 75px;
+}
+
+/* Blockquote styles */
+blockquote {
+    background: #4B7F3D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid #3E6A31;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-right: 25%
+}
+
+/* Itallic text in the blockquote */
+.bq {
+    font-style: italic;
+}
+
+/* Colouring in the footer in the blockquote */
+footer {
+    color:#333;
+}
+
+/* Fixed sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: #e7e7e7;
+    padding: 5px;
+    text-align: center;
+    border: 2px dotted black;
+}
+
+nav ul {
+    list-style-type: none; /*removes bullet points */
+    padding: 0;
+}
+
+li{
+    display: inline;
+    margin-right: 15px;
+}
+
+.sidebar nav a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+nav a {
+    margin: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content styles */
+.content {
+    padding: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+section {
+    background-color: #D6A6A0;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border:2px solid #B88C8B;
+    scroll-margin-top: 75px;
+}   
+
+/* Heading styles */
+h1, h2, h3{
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 15px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h3 {
+    background-color:#4B7F3D;
+    margin-bottom: 0;
+    margin-top: 15px;
+    border: 2px solid #3E6A31;
+    scroll-margin-top: 75px;
+}
+
+p {
+    color: white;
+}
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr{
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
