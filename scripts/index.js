@@ -1,11 +1,12 @@
-console.log("JavaScript file is loaded!");
-alert("JavaScript is working!");
-
 const sampleData = {
     Maxwell: 7,
     Tenley: 6,
     Mona: 4,
 };
+
+if (!localStorage.getItem("voteCounts")) {
+    localStorage.setItem("voteCounts", JSON.stringify(sampleData)); // Save sample data on first load
+}
 
 const voteCounts = JSON.parse(localStorage.getItem("voteCounts")) || sampleData;
 
