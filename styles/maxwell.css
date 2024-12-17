@@ -1,17 +1,19 @@
+/* -----------------------------------
+   Global Styles
+----------------------------------- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-.fixed-header {
-    top: 0;
+h2, h3, h4 {
+    text-align: center;
 }
 
-footer {
-    bottom: 0;
-}
-
+/* -----------------------------------
+   Header and Footer
+----------------------------------- */
 .fixed-header,
 footer {
     background-color: #8B0000;
@@ -23,18 +25,22 @@ footer {
     z-index: 1000;
 }
 
-h2,
-h3,
-h4 {
-    text-align: center;
+.fixed-header {
+    top: 0;
 }
 
+footer {
+    bottom: 0;
+}
+
+/* -----------------------------------
+   Layout and Structure
+----------------------------------- */
 .content {
     display: flex;
     margin-top: 80px;
     margin-bottom: 50px;
     align-items: flex-start;
-
 }
 
 main {
@@ -42,7 +48,7 @@ main {
     padding: 20px;
     flex-grow: 1;
     background-color: #fff;
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 130px); /* Adjust for fixed header/footer */
 }
 
 .sidebar {
@@ -58,6 +64,9 @@ main {
     box-sizing: border-box;
 }
 
+/* -----------------------------------
+   Card and Image Styles
+----------------------------------- */
 .card {
     display: flex;
     flex-direction: column;
@@ -68,9 +77,7 @@ main {
     flex: 1;
 }
 
-.card-img1,
-.card-img2,
-.card-img3 {
+.card-img1, .card-img2, .card-img3 {
     width: 100%;
     height: 60px;
     object-fit: cover;
@@ -78,7 +85,7 @@ main {
 }
 
 .card-img2 {
-    object-position: 20% 40%;
+    object-position: 20% 40%; /* Slight offset for the second image */
 }
 
 .card-body {
@@ -95,13 +102,17 @@ main {
     line-height: 1.2;
 }
 
-
-
+/* -----------------------------------
+   Carousel Styles
+----------------------------------- */
 .carousel-item img {
     height: 500px;
     object-fit: cover;
 }
 
+/* -----------------------------------
+   Media Queries for Responsiveness
+----------------------------------- */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
