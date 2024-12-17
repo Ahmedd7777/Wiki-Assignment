@@ -1,6 +1,3 @@
-console.log("JavaScript file is loaded!");
-alert("JavaScript is working!");
-
 const sampleData = {
     Maxwell: 7,
     Tenley: 6,
